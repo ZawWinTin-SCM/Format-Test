@@ -6,6 +6,8 @@
 
 ## Git Hooks ([ref](https://github.com/butschster/LaravelGitHooks))
 
+_(Note: You can check git hooks manually in `.git/hooks` and there are samples for hooks)_
+
 ### pre-commit
 
 The `pre-commit` hook is run first, before you even type in a commit message. It’s used to inspect the snapshot that’s about to be committed, to see if you’ve forgotten something, to make sure tests run, or to examine whatever you need to inspect in the code. Exiting non-zero from this hook aborts the commit, although you can bypass it with `git commit --no-verify`. You can do things like check for code style (run lint or something equivalent), check for trailing whitespace (the default hook does exactly this), or check for appropriate documentation on new methods.
